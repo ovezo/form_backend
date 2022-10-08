@@ -1,0 +1,33 @@
+{
+  "name": "commerce_back",
+  "version": "1.0.0",
+  "description": "E-commerce backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js",
+    "postbuild": "gcloud compute scp --force-key-file-overwrite --recurse ./* tmbytes2018@instance-1:~/commerce_back"
+  },
+  "author": "OvezO",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^6.6.1",
+    "puppeteer": "^5.5.0",
+    "request": "^2.88.2",
+    "sharp": "^0.26.0",
+    "socket.io": "^2.0.3",
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
